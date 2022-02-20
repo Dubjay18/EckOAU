@@ -3,6 +3,9 @@
   padding-right: 200px;
   padding-left: 200px;
 }
+#navbar {
+  transition: all 0.1s;
+}
 /* custom hover for navbar */
 .cus-hov:hover {
   border-top: white 2px solid;
