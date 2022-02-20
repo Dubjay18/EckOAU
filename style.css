@@ -1,0 +1,36 @@
+/* navbar */
+.pee {
+  padding-right: 200px;
+  padding-left: 200px;
+}
+/* custom hover for navbar */
+.cus-hov:hover {
+  border-top: white 2px solid;
+  border-radius: 1;
+  transition: all 0.7s;
+  padding-top: 200px;
+}
+.cus-hov {
+  border-top: transparent 2px solid;
+}
+.cus-hov > a:hover {
+  color: white !important;
+}
+/* negative margin */
+.-mt-5 {
+  margin-top: -7px;
+}
+/* custom side margin */
+
+@media (max-width: 768px) {
+  .pee {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .cus-hov:hover {
+    padding-top: 3px;
+  }
+  .-mt-5 {
+    margin-top: 0px;
+  }
+}
