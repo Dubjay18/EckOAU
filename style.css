@@ -163,6 +163,7 @@ h2 h1 .h1 .head {
     100% 0%
   ); */
 }
+
 .special-hr {
   height: 10px !important;
   border-radius: 10px;
@@ -209,5 +210,9 @@ h2 h1 .h1 .head {
 @media (min-width: 768px) {
   .w-lg-30 {
     width: 30%;
+  }
+  .cus-flex-col {
+    display: flex !important;
+    flex-direction: column !important;
   }
 }
