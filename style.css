@@ -173,11 +173,14 @@ h2 h1 .h1 .head {
 .main-site-btn {
   background-color: rgb(0, 162, 255);
 }
+.main-site-btn:hover {
+  background-color: rgb(241, 248, 251);
+}
 .main-site-btn-text {
   color: rgb(213, 235, 238) !important;
 }
 .main-site-btn-text:hover {
-  color: rgb(250, 251, 251) !important;
+  color: rgb(1, 251, 251) !important;
 }
 
 .footer-text {
