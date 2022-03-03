@@ -77,34 +77,7 @@
           
       </header>
       <div class="row container mt-5" id="post-layout">
-          <div class="col-md-6"><div class="card mb-3" style="max-width: 740px;">
-              <div class="row no-gutters">
-                <div class="col-md-12 ">
-                  <img src="../images (38).jpeg" class="card-img" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-            </div></div>
-          <div class="col-md-6"><div class="card mb-3" style="max-width: 740px;">
-              <div class="row no-gutters">
-                <div class="col-md-12 ">
-                  <img src="../images (38).jpeg" class="card-img" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-            </div></div>
+       <div class="p-5 d-flex justify-content-center align-items-center text-success"><h1>Loading...</h1></div>
       </div>
       <div class="row p-3">
           
@@ -119,7 +92,7 @@
           <h2 class=" pt-3">Eckankar OAU</h2>
         </div>
         <div class=" navbar col-md-6 col-lg-9 text-center">
-          <ul class="nav   ">
+          <ul class="nav  cus-flex-col">
             <li class="nav-item ">
               <a class="nav-link active footer-text  ps-1 " aria-current="page" href="./index.html">Home</a>
             </li>
@@ -142,7 +115,7 @@
           </p>
           
         </div>
-
+        <div class="blockquote-footer">Copyrights Eckankar OAU 2022. All rights reserved to Jay</div>
       </div>
     </div>
   </footer>
@@ -152,6 +125,81 @@
    
 </body>
 <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<script>
+  const excos = [
+  {
+    img: "IMG-20220222-WA0011.jpg",
+    name: "Abbah Theresa ogwa",
+    number: "09072643146",
+    email: "theresabbah9@gmail.com",
+    post: "Campus Coordinator",
+  },
+  {
+    img: "IMG-20220222-WA0012.jpg",
+    name: "Ayobola Liasu",
+    number: "08140978262",
+    email: "afaliasu@yahoo.com",
+    post: "Assitant Campus Coordinator",
+  },
+  {
+    img: "IMG-20220222-WA0013.jpg",
+    name: "Busayo Oyagbile",
+    number: "09033145488",
+    email: "busahyorp@gmail.com",
+    post: "Financial Secretary",
+  },
+
+  {
+    img: "IMG-20220222-WA0020.jpg",
+    name: "Abbah Ochanya",
+    number: "09038701949",
+    email: "ochanyaabbah87@gmail.com",
+    post: "Auditor",
+  },
+];
+let post = "";
+let postLayout = document.querySelector("#post-layout");
+excos.forEach((e, i) => {
+  if (i == 1) {
+    post += `<div class="col-md-6"><div class="card mb-3" style="max-width: 640px;">
+    <div class="row no-gutters">
+      <div class="col-lg-4">
+        <img src="../images/${e.img}" class="card-img" alt="..." height="100%" object-fit="contain">
+      </div>
+      <div class="col-lg-8">
+        <div class="card-body">
+          <h5 class="card-title">Name: ${e.name}</h5>
+          <p class="card-text">Post: ${e.post}</p>
+          <p class="card-text">Phone number: ${e.number}</p>
+          <p class="card-text">E-mail: ${e.email}</p>
+       
+        </div>
+      </div>
+    </div>
+  </div></div>`;
+  } else {
+    post += `<div class="col-md-6"><div class="card mb-3" style="max-width: 640px;">
+    <div class="row no-gutters">
+      <div class="col-lg-4 ">
+        <img src="../images/${e.img}" class="card-img" alt="..."  object-fit="contain">
+      </div>
+      <div class="col-lg-8">
+        <div class="card-body">
+          <h5 class="card-title">Name: ${e.name}</h5>
+          <p class="card-text">Post: ${e.post}</p>
+          <p class="card-text">Phone number: ${e.number}</p>
+          <p class="card-text">E-mail: ${e.email}</p>
+          
+        </div>
+      </div>
+    </div>
+  </div></div>`;
+  }
+
+  postLayout.innerHTML = post;
+});
+
+</script>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="../script.js"></script>

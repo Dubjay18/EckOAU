@@ -1,7 +1,7 @@
 window.onscroll = function () {
   scrollFunction();
 };
-
+// navbar fixed scroll bar function
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.position = "fixed";
@@ -18,107 +18,3 @@ function scrollFunction() {
     document.getElementById("navbar").style.transition = "0.7s";
   }
 }
-const excos = [
-  {
-    img: "IMG-20220222-WA0011.jpg",
-    name: "Abbah Theresa ogwa",
-    number: "09072643146",
-    email: "theresabbah9@gmail.com",
-    post: "Campus Coordinator",
-  },
-  {
-    img: "IMG-20220222-WA0012.jpg",
-    name: "Ayobola Liasu",
-    number: "08140978262",
-    email: "afaliasu@yahoo.com",
-    post: "Assitant Campus Coordinator",
-  },
-  {
-    img: "IMG-20220222-WA0013.jpg",
-    name: "Busayo Oyagbile",
-    number: "09033145488",
-    email: "busahyorp@gmail.com",
-    post: "Financial Secretary",
-  },
-
-  {
-    img: "IMG-20220222-WA0020.jpg",
-    name: "Abbah Ochanya",
-    number: "09038701949",
-    email: "ochanyaabbah87@gmail.com",
-    post: "Auditor",
-  },
-];
-const staffAdvisers = [
-  {
-    img: "IMG-20220222-WA0014.jpg",
-    name: "Prof. Innocent Ikem",
-    number: "08033447560",
-    email: "innoikem@gmail.com",
-  },
-  {
-    img: "IMG-20220222-WA0015.jpg",
-    name: "Dr. I. E Arua",
-    number: "08033548185",
-    email: "ifyarua6@gmail.com",
-  },
-];
-let postLayout = document.querySelector("#post-layout");
-let postLayout2 = document.querySelector("#post-layout2");
-let post = "";
-let post2 = "";
-staffAdvisers.forEach((e) => {
-  post2 += `<div class="col-md-6"><div class="card mb-3" style="max-width: 640px;">
-  <div class="row no-gutters">
-    <div class="col-lg-4 ">
-      <img src="../images/${e.img}" class="card-img" alt="..."  object-fit="contain">
-    </div>
-    <div class="col-lg-8">
-      <div class="card-body">
-        <h6 class="card-text">Name: ${e.name}</h6>
-        <h6 class="card-text">Phone number: ${e.number}</h6>
-        <h6 class="card-text">E-mail: ${e.email}</h6>
-      </div>
-    </div>
-  </div>
-</div></div>`;
-  postLayout2.innerHTML = post2;
-});
-excos.forEach((e, i) => {
-  if (i == 1) {
-    post += `<div class="col-md-6"><div class="card mb-3" style="max-width: 640px;">
-    <div class="row no-gutters">
-      <div class="col-lg-4">
-        <img src="../images/${e.img}" class="card-img" alt="..." height="100%" object-fit="contain">
-      </div>
-      <div class="col-lg-8">
-        <div class="card-body">
-          <h5 class="card-title">Name: ${e.name}</h5>
-          <p class="card-text">Post: ${e.post}</p>
-          <p class="card-text">Phone number: ${e.number}</p>
-          <p class="card-text">E-mail: ${e.email}</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
-  </div></div>`;
-  } else {
-    post += `<div class="col-md-6"><div class="card mb-3" style="max-width: 640px;">
-    <div class="row no-gutters">
-      <div class="col-lg-4 ">
-        <img src="../images/${e.img}" class="card-img" alt="..."  object-fit="contain">
-      </div>
-      <div class="col-lg-8">
-        <div class="card-body">
-          <h5 class="card-title">Name: ${e.name}</h5>
-          <p class="card-text">Post: ${e.post}</p>
-          <p class="card-text">Phone number: ${e.number}</p>
-          <p class="card-text">E-mail: ${e.email}</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
-  </div></div>`;
-  }
-  postLayout.innerHTML = post;
-});

@@ -209,13 +209,16 @@ h2 h1 .h1 .head {
   .carousel-inner {
     height: 300px;
   }
-}
-@media (min-width: 768px) {
-  .w-lg-30 {
-    width: 30%;
+  .navbar-brand {
+    width: 50% !important;
   }
   .cus-flex-col {
     display: flex !important;
     flex-direction: column !important;
+  }
+}
+@media (min-width: 768px) {
+  .w-lg-30 {
+    width: 30%;
   }
 }
